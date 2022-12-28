@@ -13,7 +13,7 @@ DEFAULT_VELOCITY = 100
 # ### functions from midi2input
 
 # %%
-def find_bass_instrument(midi_data: pretty_midi.PrettyMIDI):
+def _find_bass_instrument(midi_data: pretty_midi.PrettyMIDI):
     for instr in midi_data.instruments:
         instr: pretty_midi.Instrument
         if instr.program == 32 and not instr.is_drum:
@@ -23,7 +23,7 @@ def find_bass_instrument(midi_data: pretty_midi.PrettyMIDI):
         if instr.program > 32 and instr.program <= 39 and not instr.is_drum:
             return instr
 
-def get_sixteenth_beats_from_beats(beats, end_time):
+def _get_sixteenth_beats_from_beats(beats, end_time):
     sixteenth_beats = []
     # sixteenth_beats in complete beat
     for i in range(len(beats)-2):
@@ -45,6 +45,17 @@ def get_sixteenth_beats_from_beats(beats, end_time):
 
 # %%
 def output_to_midi(bass_ndarr: np.ndarray, ref_midi_path=None, output_path="bass.mid"):
+    """
+    bass_ndarr: a np.ndarray represents bass notes, which supposely has the same shape of .ans.npy.
+                You can use `ndarr_obj.reshape((-1,52))` to reshape your input, or this function will do for you.
+
+    ref_midi_path: the original midi file with bass and other instruments, the function will
+                replace the bass track by the bass line you input. If it's None, only the bass 
+                track will be output.
+                
+    output_path: the name of output midi file
+    """
+    bass_ndarr = np.reshape(bass_ndarr, (-1, 52))
     # if there is a reference midi file, create new midi file by modifying it, otherwise use defalt setting
     midi_data = pretty_midi.PrettyMIDI(ref_midi_path)
     if ref_midi_path == None:
@@ -55,9 +66,9 @@ def output_to_midi(bass_ndarr: np.ndarray, ref_midi_path=None, output_path="bass
         midi_data.instruments.append(bass_track)
     else:
         beats = np.append(midi_data.get_beats(), midi_data.get_end_time())
-        sixteenth_beats = get_sixteenth_beats_from_beats(beats, midi_data.get_end_time())
+        sixteenth_beats = _get_sixteenth_beats_from_beats(beats, midi_data.get_end_time())
 
-        bass_track = find_bass_instrument(midi_data)
+        bass_track = _find_bass_instrument(midi_data)
         bass_track.notes = []
     
     # appending notes according to bass_ndarr
@@ -81,11 +92,3 @@ def output_to_midi(bass_ndarr: np.ndarray, ref_midi_path=None, output_path="bass
     
     # write file
     midi_data.write(output_path)
-
-# %%
-# bass_test = np.load("../test_input/4on6.mid.ans.npy")
-# input_test = np.load("../test_input/4on6.mid.npy")
-# output_to_midi(bass_test, "../input_midi/jazz_standards/4on6.mid")
-# output_to_midi(bass_test)
-
-
