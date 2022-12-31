@@ -1,0 +1,3 @@
+irealpro dataset 100 epochs
+dense dataset 200 epochs
+augmentation(full) dataset 200 epochs

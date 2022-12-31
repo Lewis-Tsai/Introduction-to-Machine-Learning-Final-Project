@@ -1,0 +1,4 @@
+stage1: 13min
+stage2: 41min
+stage3: 75min
+all: 130 min
