@@ -1,6 +1,7 @@
 # %%
 import numpy as np
 import pretty_midi
+import time
 # import matplotlib.pyplot as plt
 
 # %%
@@ -11,6 +12,16 @@ CHROMA_FS = 100
 BASS_UPPER_BOUND = pretty_midi.note_name_to_number("D5")
 BASS_LOWER_BOUND = pretty_midi.note_name_to_number("B0")
 BASS_REST_THRESH = 0.25
+
+# %% [markdown]
+# ### pad piano_roll
+
+# %%
+def pad_piano_roll(target_roll_length, piano_roll):
+    if target_roll_length-piano_roll.shape[1] == 0:
+        return piano_roll
+    else:
+        return np.pad(piano_roll, ((0,0),(0,target_roll_length-piano_roll.shape[1])), "constant", constant_values=0)
 
 # %% [markdown]
 # ### find bass instrument
@@ -32,7 +43,7 @@ def find_bass_instrument(midi_data: pretty_midi.PrettyMIDI):
 # %%
 def get_chroma_except_bass(midi_data: pretty_midi.PrettyMIDI, bass_instr: pretty_midi.Instrument):
     chroma = midi_data.get_chroma(CHROMA_FS)
-    bass_chroma = bass_instr.get_chroma(CHROMA_FS)
+    bass_chroma = pad_piano_roll(chroma.shape[1], bass_instr.get_chroma(CHROMA_FS))
     return chroma-bass_chroma
 
 # %% [markdown]
@@ -157,8 +168,8 @@ def get_number_of_instruments_per_bar(piano_rolls, drum_rolls, down_beats):
 # ### get is bass playing this bar
 
 # %%
-def get_is_bass_playing_this_bar(bass_track: pretty_midi.Instrument, down_beats):
-    bass_chroma = np.sum(bass_track.get_piano_roll(CHROMA_FS), axis=0)
+def get_is_bass_playing_this_bar(bass_piano_roll, down_beats):
+    bass_chroma = np.sum(bass_piano_roll, axis=0)
     is_bass_playing_this_bar = []
     for i in range(len(down_beats)-1):
         left = int(down_beats[i]*CHROMA_FS)
@@ -212,15 +223,16 @@ def get_bass_note_in_16th_note(piano_roll: np.ndarray, bass_onsets_frames, left_
 # %%
 def midi_to_input(path):
     midi_data = pretty_midi.PrettyMIDI(path)
+    max_roll_length = int(midi_data.get_end_time() * CHROMA_FS)
     
     ## data preparation
     # bass part (ground truth)
     bass_track = find_bass_instrument(midi_data)
     assert bass_track != None, "didn't find bass instruments in midi file"
     trimed_bass_track = bass_midi_trim(bass_track)
-    bass_piano_roll = trimed_bass_track.get_piano_roll()[BASS_LOWER_BOUND:BASS_UPPER_BOUND+1]
+    bass_piano_roll = trimed_bass_track.get_piano_roll(CHROMA_FS)[BASS_LOWER_BOUND:BASS_UPPER_BOUND+1]
     bass_onsets_frames = get_bass_onsets_frames(trimed_bass_track)
-    
+
     # beat time point
     sixteenth_beats, beats, half_bar_beats, down_beats = get_four_scale_beats(midi_data)
 
@@ -229,7 +241,7 @@ def midi_to_input(path):
     chroma_per_beat, chroma_per_halfbar, chroma_per_bar = get_three_scale_chroma(chroma, beats, half_bar_beats, down_beats)
 
     # instruments num per bar
-    piano_rolls = [instr.get_piano_roll(CHROMA_FS) for instr in midi_data.instruments]
+    piano_rolls = [pad_piano_roll(max_roll_length, instr.get_piano_roll(CHROMA_FS)) for instr in midi_data.instruments]
     drum_rolls = get_drum_rolls(midi_data)
     instrument_per_bar = get_number_of_instruments_per_bar(piano_rolls, drum_rolls, down_beats)
 
@@ -240,7 +252,7 @@ def midi_to_input(path):
         time_sig_changes = [pretty_midi.TimeSignature(4, 4, 0)]
 
     # is bass playing
-    is_bass_playing_this_bar = get_is_bass_playing_this_bar(bass_track, down_beats)
+    is_bass_playing_this_bar = get_is_bass_playing_this_bar(bass_piano_roll, down_beats)
     
 
     ## run
