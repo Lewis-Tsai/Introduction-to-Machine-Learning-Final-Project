@@ -95,7 +95,7 @@ def output_to_midi(prediction: np.ndarray, ref_midi_path=None, output_path="bass
                 new_note = pretty_midi.Note(note_velocity, midi_number, note_start_time, note_end_time)
                 bass_track.notes.append(new_note)
             note_start_time = sixteenth_beats[i] + start_correction_arr[i]
-            note_velocity = []
+            velocity_record = []
             last_pitch = cur_pitch
         velocity_record.append(velocity_arr[i])
 
