@@ -58,7 +58,7 @@ def output_to_midi(prediction: np.ndarray, ref_midi_path=None, output_path="bass
     prediction = np.reshape(prediction, (-1, 57))
 
     bass_ndarr = prediction[:,:REST+1]
-    is_onset_arr = prediction[:,REST+1]
+    is_onset_arr = prediction[:,REST+1] > 0.5
     start_correction_arr = prediction[:,REST+2]
     end_correction_arr = prediction[:,REST+3]
     velocity_arr = prediction[:,REST+4]
