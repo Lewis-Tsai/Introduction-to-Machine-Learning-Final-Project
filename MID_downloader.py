@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup 
   
 # specify the URL of the archive here 
-archive_url = "https://bhs.minor9.com/midi/jazzstandards/"
+archive_url = "https://midkar.com/jazz/jazz_01.html"
   
 def get_midi_links(): 
       
@@ -54,6 +54,9 @@ if __name__ == "__main__":
   
     # getting all midi links 
     midi_links = get_midi_links() 
+    # for i, s in enumerate(midi_links):
+    #     midi_links[i] = midi_links[i].replace("jazz_01.html", "")
+    # print(midi_links)
   
     # download all midi 
     download_midi_series(midi_links) 
