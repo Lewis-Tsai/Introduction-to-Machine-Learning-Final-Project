@@ -1,0 +1,1032 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+(base) cyc@ahg-WS660T:~/ML_Final$ conda activate p3-10
+(p3-10) cyc@ahg-WS660T:~/ML_Final$ python Untitled-1.py
+2023-01-18 04:21:16.645873: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDN
+N) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-01-18 04:21:19.276210: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer.so.7'; dlerror:
+ libnvinfer.so.7: cannot open shared object file: No such file or directory
+2023-01-18 04:21:19.276494: W tensorflow/compiler/xla/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'libnvinfer_plugin.so.7'; d
+lerror: libnvinfer_plugin.so.7: cannot open shared object file: No such file or directory
+2023-01-18 04:21:19.276539: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Cannot dlopen some TensorRT libraries. If you would like to use
+ Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2023-01-18 04:21:47.789972: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1),
+but there must be at least one NUMA node, so returning NUMA node zero
+2023-01-18 04:21:47.807628: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1),
+but there must be at least one NUMA node, so returning NUMA node zero
+2023-01-18 04:21:47.808235: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1),
+but there must be at least one NUMA node, so returning NUMA node zero
+2023-01-18 04:21:47.809389: I tensorflow/core/platform/cpu_feature_guard.cc:193] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDN
+N) to use the following CPU instructions in performance-critical operations:  AVX2 FMA
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-01-18 04:21:47.810831: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1),
+but there must be at least one NUMA node, so returning NUMA node zero
+2023-01-18 04:21:47.811395: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1),
+but there must be at least one NUMA node, so returning NUMA node zero
+2023-01-18 04:21:47.811901: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1),
+but there must be at least one NUMA node, so returning NUMA node zero
+2023-01-18 04:21:48.266045: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1),
+but there must be at least one NUMA node, so returning NUMA node zero
+2023-01-18 04:21:48.266252: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1),
+but there must be at least one NUMA node, so returning NUMA node zero
+2023-01-18 04:21:48.266395: I tensorflow/compiler/xla/stream_executor/cuda/cuda_gpu_executor.cc:981] successful NUMA node read from SysFS had negative value (-1),
+but there must be at least one NUMA node, so returning NUMA node zero
+2023-01-18 04:21:48.266515: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1613] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 10397 MB memo
+ry:  -> device: 0, name: NVIDIA GeForce GTX 1080 Ti, pci bus id: 0000:01:00.0, compute capability: 6.1
+WARNING:tensorflow:From /media/labhdd/cyc/miniconda3/envs/p3-10/lib/python3.10/site-packages/tensorflow/python/autograph/pyct/static_analysis/liveness.py:83: Analy
+zer.lamba_check (from tensorflow.python.autograph.pyct.static_analysis.liveness) is deprecated and will be removed after 2023-09-23.
+Instructions for updating:
+Lambda fuctions will be no more assumed to be used in the statement where they are used, or at least in the same block. https://github.com/tensorflow/tensorflow/is
+sues/56089
+Model: "model"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 16, 43)]          0
+
+ mask (Masking)              (None, 16, 43)            0
+
+ input (TimeDistributed)     (None, 16, 100)           4400
+
+ bidirectional (Bidirectiona  (None, 16, 200)          160800
+ l)
+
+ output (TimeDistributed)    (None, 16, 53)            10653
+
+=================================================================
+Total params: 175,853
+Trainable params: 175,853
+Non-trainable params: 0
+_________________________________________________________________
+None
+2023-01-18 04:22:10.153712: W tensorflow/core/common_runtime/type_inference.cc:339] Type inference failed. This indicates an invalid graph that escaped type checki
+ng. Error message: INVALID_ARGUMENT: expected compatible input types, but input 1:
+type_id: TFT_OPTIONAL
+args {
+  type_id: TFT_PRODUCT
+  args {
+    type_id: TFT_TENSOR
+    args {
+      type_id: TFT_INT32
+    }
+  }
+}
+ is neither a subtype nor a supertype of the combined inputs preceding it:
+type_id: TFT_OPTIONAL
+args {
+  type_id: TFT_PRODUCT
+  args {
+    type_id: TFT_TENSOR
+    args {
+      type_id: TFT_FLOAT
+    }
+  }
+}
+
+        while inferring type of node 'cond_20/output/_23'
+2023-01-18 04:22:10.587369: I tensorflow/compiler/xla/stream_executor/cuda/cuda_dnn.cc:428] Loaded cuDNN version 8201
+2023-01-18 04:22:11.113330: I tensorflow/compiler/xla/service/service.cc:173] XLA service 0x7f41e8002b40 initialized for platform CUDA (this does not guarantee tha
+t XLA will be used). Devices:
+2023-01-18 04:22:11.113362: I tensorflow/compiler/xla/service/service.cc:181]   StreamExecutor device (0): NVIDIA GeForce GTX 1080 Ti, Compute Capability 6.1
+2023-01-18 04:22:11.123836: I tensorflow/compiler/mlir/tensorflow/utils/dump_mlir_util.cc:268] disabling MLIR crash reproducer, set env var `MLIR_CRASH_REPRODUCER_
+DIRECTORY` to enable.
+2023-01-18 04:22:11.307959: E tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:109] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly pre
+fers >= 11.1).  Compilation of XLA kernels below will likely fail.
+
+You may not need to update CUDA; cherry-picking the ptxas binary is often sufficient.
+2023-01-18 04:22:11.361879: W tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:234] Falling back to the CUDA driver for PTX compilation; ptxas does not
+support CC 6.1
+2023-01-18 04:22:11.361912: W tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:237] Used ptxas at ptxas
+2023-01-18 04:22:11.363184: I tensorflow/compiler/jit/xla_compilation_cache.cc:477] Compiled cluster using XLA!  This line is logged at most once for the lifetime
+of the process.
+2023-01-18 04:22:11.505556: E tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:109] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly pre
+fers >= 11.1).  Compilation of XLA kernels below will likely fail.
+
+You may not need to update CUDA; cherry-picking the ptxas binary is often sufficient.
+2023-01-18 04:22:11.645922: E tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:109] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly pre
+fers >= 11.1).  Compilation of XLA kernels below will likely fail.
+
+You may not need to update CUDA; cherry-picking the ptxas binary is often sufficient.
+2023-01-18 04:22:11.813606: E tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:109] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly pre
+fers >= 11.1).  Compilation of XLA kernels below will likely fail.
+
+You may not need to update CUDA; cherry-picking the ptxas binary is often sufficient.
+2023-01-18 04:22:11.986606: E tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:109] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly pre
+fers >= 11.1).  Compilation of XLA kernels below will likely fail.
+
+You may not need to update CUDA; cherry-picking the ptxas binary is often sufficient.
+2023-01-18 04:22:12.138054: E tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:109] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly pre
+fers >= 11.1).  Compilation of XLA kernels below will likely fail.
+
+You may not need to update CUDA; cherry-picking the ptxas binary is often sufficient.
+2023-01-18 04:22:12.285680: E tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:109] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly pre
+fers >= 11.1).  Compilation of XLA kernels below will likely fail.
+
+You may not need to update CUDA; cherry-picking the ptxas binary is often sufficient.
+2023-01-18 04:22:12.445580: E tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:109] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly pre
+fers >= 11.1).  Compilation of XLA kernels below will likely fail.
+
+You may not need to update CUDA; cherry-picking the ptxas binary is often sufficient.
+2023-01-18 04:22:12.601573: E tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:109] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly pre
+fers >= 11.1).  Compilation of XLA kernels below will likely fail.
+
+You may not need to update CUDA; cherry-picking the ptxas binary is often sufficient.
+2023-01-18 04:22:12.747682: E tensorflow/compiler/xla/stream_executor/gpu/asm_compiler.cc:109] You are using ptxas 8.x, but TF requires ptxas 9.x (and strongly pre
+fers >= 11.1).  Compilation of XLA kernels below will likely fail.
+
+You may not need to update CUDA; cherry-picking the ptxas binary is often sufficient.
+Epoch 1 Loss 2.7352 Acc 0.2719
+Validation Loss 2.6520 Acc 0.2582
+Time taken for 1 epoch 814.021728515625 sec
+
+Epoch 2 Loss 2.5427 Acc 0.2921
+Validation Loss 2.5819 Acc 0.2674
+Time taken for 1 epoch 19.417659521102905 sec
+
+Epoch 3 Loss 2.4982 Acc 0.2995
+Validation Loss 2.5392 Acc 0.2787
+Time taken for 1 epoch 19.521241188049316 sec
+
+Epoch 4 Loss 2.4665 Acc 0.3068
+Validation Loss 2.5169 Acc 0.2799
+Time taken for 1 epoch 19.5790753364563 sec
+
+Epoch 5 Loss 2.4336 Acc 0.3156
+Validation Loss 2.5000 Acc 0.2793
+Time taken for 1 epoch 19.656097650527954 sec
+
+Epoch 6 Loss 2.4089 Acc 0.3232
+Validation Loss 2.4591 Acc 0.2989
+Time taken for 1 epoch 19.700438022613525 sec
+
+Epoch 7 Loss 2.3953 Acc 0.3275
+Validation Loss 2.4697 Acc 0.3026
+Time taken for 1 epoch 19.8214430809021 sec
+
+Epoch 8 Loss 2.3698 Acc 0.3345
+Validation Loss 2.4335 Acc 0.3088
+Time taken for 1 epoch 19.90390658378601 sec
+
+Epoch 9 Loss 2.3679 Acc 0.3351
+Validation Loss 2.4533 Acc 0.3061
+Time taken for 1 epoch 19.874460220336914 sec
+
+Epoch 10 Loss 2.3527 Acc 0.3390
+Validation Loss 2.4223 Acc 0.3101
+Time taken for 1 epoch 19.925694942474365 sec
+
+Epoch 11 Loss 2.3683 Acc 0.3346
+Validation Loss 2.4641 Acc 0.2996
+Time taken for 1 epoch 19.91356921195984 sec
+
+Epoch 12 Loss 2.3608 Acc 0.3366
+Validation Loss 2.4253 Acc 0.3093
+Time taken for 1 epoch 19.93708634376526 sec
+
+Epoch 13 Loss 2.3391 Acc 0.3423
+Validation Loss 2.4166 Acc 0.3120
+Time taken for 1 epoch 19.941158771514893 sec
+
+Epoch 14 Loss 2.3496 Acc 0.3396
+Validation Loss 2.4570 Acc 0.3001
+Time taken for 1 epoch 19.85329031944275 sec
+
+Epoch 15 Loss 2.3407 Acc 0.3411
+Validation Loss 2.4105 Acc 0.3127
+Time taken for 1 epoch 19.99554181098938 sec
+
+Epoch 16 Loss 2.3344 Acc 0.3427
+Validation Loss 2.4248 Acc 0.3040
+Time taken for 1 epoch 19.91051435470581 sec
+
+Epoch 17 Loss 2.3236 Acc 0.3456
+Validation Loss 2.4106 Acc 0.3126
+Time taken for 1 epoch 20.007490158081055 sec
+
+Epoch 18 Loss 2.3385 Acc 0.3418
+Validation Loss 2.4651 Acc 0.2944
+Time taken for 1 epoch 19.91645908355713 sec
+
+Epoch 19 Loss 2.3382 Acc 0.3418
+Validation Loss 2.4147 Acc 0.3121
+Time taken for 1 epoch 20.07575488090515 sec
+
+Epoch 20 Loss 2.3398 Acc 0.3419
+Validation Loss 2.4231 Acc 0.3101
+Time taken for 1 epoch 19.886942386627197 sec
+
+Epoch 21 Loss 2.3323 Acc 0.3428
+Validation Loss 2.4166 Acc 0.3122
+Time taken for 1 epoch 19.936391353607178 sec
+
+Epoch 22 Loss 2.3206 Acc 0.3465
+Validation Loss 2.4156 Acc 0.3118
+Time taken for 1 epoch 20.005086660385132 sec
+
+Epoch 23 Loss 2.3150 Acc 0.3480
+Validation Loss 2.4090 Acc 0.3130
+Time taken for 1 epoch 20.09923219680786 sec
+
+Epoch 24 Loss 2.3209 Acc 0.3465
+Validation Loss 2.4119 Acc 0.3130
+Time taken for 1 epoch 19.87610411643982 sec
+
+Epoch 25 Loss 2.3126 Acc 0.3483
+Validation Loss 2.4145 Acc 0.3117
+Time taken for 1 epoch 19.965973377227783 sec
+
+Epoch 26 Loss 2.3081 Acc 0.3493
+Validation Loss 2.4113 Acc 0.3125
+Time taken for 1 epoch 19.98489737510681 sec
+
+Epoch 27 Loss 2.3067 Acc 0.3498
+Validation Loss 2.4210 Acc 0.3097
+Time taken for 1 epoch 19.9906964302063 sec
+
+Epoch 28 Loss 2.3128 Acc 0.3474
+Validation Loss 2.4147 Acc 0.3043
+Time taken for 1 epoch 19.9515597820282 sec
+
+Epoch 29 Loss 2.3172 Acc 0.3466
+Validation Loss 2.4187 Acc 0.3109
+Time taken for 1 epoch 19.97656488418579 sec
+
+Epoch 30 Loss 2.3105 Acc 0.3487
+Validation Loss 2.4103 Acc 0.3127
+Time taken for 1 epoch 19.957985162734985 sec
+
+Epoch 31 Loss 2.3006 Acc 0.3513
+Validation Loss 2.4028 Acc 0.3149
+Time taken for 1 epoch 19.970508337020874 sec
+
+Epoch 32 Loss 2.3013 Acc 0.3509
+Validation Loss 2.4018 Acc 0.3147
+Time taken for 1 epoch 19.83655333518982 sec
+
+Epoch 33 Loss 2.3009 Acc 0.3511
+Validation Loss 2.4072 Acc 0.3136
+Time taken for 1 epoch 19.92554998397827 sec
+
+Epoch 34 Loss 2.3284 Acc 0.3437
+Validation Loss 2.4637 Acc 0.2957
+Time taken for 1 epoch 20.05629873275757 sec
+
+Epoch 35 Loss 2.3434 Acc 0.3394
+Validation Loss 2.4175 Acc 0.3129
+Time taken for 1 epoch 19.8610200881958 sec
+
+Epoch 36 Loss 2.3218 Acc 0.3460
+Validation Loss 2.4062 Acc 0.3152
+Time taken for 1 epoch 19.941123008728027 sec
+
+Epoch 37 Loss 2.3121 Acc 0.3488
+Validation Loss 2.4197 Acc 0.3111
+Time taken for 1 epoch 19.89177131652832 sec
+
+Epoch 38 Loss 2.2996 Acc 0.3521
+Validation Loss 2.4001 Acc 0.3157
+Time taken for 1 epoch 19.97503972053528 sec
+
+Epoch 39 Loss 2.2998 Acc 0.3516
+Validation Loss 2.4060 Acc 0.3143
+Time taken for 1 epoch 20.012784481048584 sec
+
+Epoch 40 Loss 2.2946 Acc 0.3531
+Validation Loss 2.4012 Acc 0.3107
+Time taken for 1 epoch 19.9803729057312 sec
+
+Epoch 41 Loss 2.3033 Acc 0.3508
+Validation Loss 2.4088 Acc 0.3135
+Time taken for 1 epoch 19.895926237106323 sec
+
+Epoch 42 Loss 2.2967 Acc 0.3524
+Validation Loss 2.4040 Acc 0.3152
+Time taken for 1 epoch 19.941134929656982 sec
+
+Epoch 43 Loss 2.3194 Acc 0.3466
+Validation Loss 2.4102 Acc 0.3141
+Time taken for 1 epoch 20.01534366607666 sec
+
+Epoch 44 Loss 2.2984 Acc 0.3521
+Validation Loss 2.4000 Acc 0.3158
+Time taken for 1 epoch 19.90475869178772 sec
+
+Epoch 45 Loss 2.2959 Acc 0.3529
+Validation Loss 2.3994 Acc 0.3123
+Time taken for 1 epoch 19.873931646347046 sec
+
+Epoch 46 Loss 2.3205 Acc 0.3470
+Validation Loss 2.4146 Acc 0.3120
+Time taken for 1 epoch 19.985634803771973 sec
+
+Epoch 47 Loss 2.3108 Acc 0.3492
+Validation Loss 2.4103 Acc 0.3117
+Time taken for 1 epoch 19.838329553604126 sec
+
+Epoch 48 Loss 2.3116 Acc 0.3484
+Validation Loss 2.4034 Acc 0.3146
+Time taken for 1 epoch 20.008163690567017 sec
+
+Epoch 49 Loss 2.2981 Acc 0.3523
+Validation Loss 2.4033 Acc 0.3137
+Time taken for 1 epoch 19.939669847488403 sec
+
+Epoch 50 Loss 2.2945 Acc 0.3532
+Validation Loss 2.4001 Acc 0.3137
+Time taken for 1 epoch 19.89972233772278 sec
+
+Epoch 51 Loss 2.2907 Acc 0.3543
+Validation Loss 2.4043 Acc 0.3089
+Time taken for 1 epoch 19.899343729019165 sec
+
+Epoch 52 Loss 2.2887 Acc 0.3547
+Validation Loss 2.4217 Acc 0.2979
+Time taken for 1 epoch 19.938928365707397 sec
+
+Epoch 53 Loss 2.2862 Acc 0.3553
+Validation Loss 2.4003 Acc 0.3151
+Time taken for 1 epoch 20.00240159034729 sec
+
+Epoch 54 Loss 2.2896 Acc 0.3540
+Validation Loss 2.4608 Acc 0.2977
+Time taken for 1 epoch 19.87671399116516 sec
+
+Epoch 55 Loss 2.2919 Acc 0.3533
+Validation Loss 2.3982 Acc 0.3146
+Time taken for 1 epoch 19.946911811828613 sec
+
+Epoch 56 Loss 2.2992 Acc 0.3514
+Validation Loss 2.4180 Acc 0.3103
+Time taken for 1 epoch 19.911837100982666 sec
+
+Epoch 57 Loss 2.2971 Acc 0.3519
+Validation Loss 2.3959 Acc 0.3144
+Time taken for 1 epoch 20.018335580825806 sec
+
+Epoch 58 Loss 2.2891 Acc 0.3542
+Validation Loss 2.4240 Acc 0.3010
+Time taken for 1 epoch 19.966089248657227 sec
+
+Epoch 59 Loss 2.2835 Acc 0.3558
+Validation Loss 2.3960 Acc 0.3144
+Time taken for 1 epoch 19.921068906784058 sec
+
+Epoch 60 Loss 2.2864 Acc 0.3547
+Validation Loss 2.3967 Acc 0.3135
+Time taken for 1 epoch 19.95013999938965 sec
+
+Epoch 61 Loss 2.2929 Acc 0.3532
+Validation Loss 2.4107 Acc 0.3103
+Time taken for 1 epoch 19.953397035598755 sec
+
+Epoch 62 Loss 2.2855 Acc 0.3551
+Validation Loss 2.4166 Acc 0.3104
+Time taken for 1 epoch 19.953759908676147 sec
+
+Epoch 63 Loss 2.2912 Acc 0.3537
+Validation Loss 2.4059 Acc 0.3113
+Time taken for 1 epoch 20.00882053375244 sec
+
+Epoch 64 Loss 2.2796 Acc 0.3569
+Validation Loss 2.3984 Acc 0.3136
+Time taken for 1 epoch 19.953230619430542 sec
+
+Epoch 65 Loss 2.2934 Acc 0.3529
+Validation Loss 2.4088 Acc 0.3117
+Time taken for 1 epoch 20.01342225074768 sec
+
+Epoch 66 Loss 2.2802 Acc 0.3566
+Validation Loss 2.4026 Acc 0.3129
+Time taken for 1 epoch 19.859298944473267 sec
+
+Epoch 67 Loss 2.2801 Acc 0.3568
+Validation Loss 2.4066 Acc 0.3063
+Time taken for 1 epoch 19.99393343925476 sec
+
+Epoch 68 Loss 2.2785 Acc 0.3571
+Validation Loss 2.4117 Acc 0.3059
+Time taken for 1 epoch 19.952236890792847 sec
+
+Epoch 69 Loss 2.2789 Acc 0.3569
+Validation Loss 2.3969 Acc 0.3144
+Time taken for 1 epoch 19.948368787765503 sec
+
+Epoch 70 Loss 2.2821 Acc 0.3562
+Validation Loss 2.4008 Acc 0.3087
+Time taken for 1 epoch 19.835801362991333 sec
+
+Epoch 71 Loss 2.2833 Acc 0.3558
+Validation Loss 2.4022 Acc 0.3086
+Time taken for 1 epoch 19.921498775482178 sec
+
+Epoch 72 Loss 2.2778 Acc 0.3573
+Validation Loss 2.3947 Acc 0.3134
+Time taken for 1 epoch 19.90047574043274 sec
+
+Epoch 73 Loss 2.2830 Acc 0.3559
+Validation Loss 2.4090 Acc 0.3095
+Time taken for 1 epoch 19.932394981384277 sec
+
+Epoch 74 Loss 2.2778 Acc 0.3575
+Validation Loss 2.4014 Acc 0.3135
+Time taken for 1 epoch 19.93017315864563 sec
+
+Epoch 75 Loss 2.2762 Acc 0.3579
+Validation Loss 2.3948 Acc 0.3134
+Time taken for 1 epoch 19.950330018997192 sec
+
+Epoch 76 Loss 2.2709 Acc 0.3595
+Validation Loss 2.3996 Acc 0.3132
+Time taken for 1 epoch 19.95786476135254 sec
+
+Epoch 77 Loss 2.2889 Acc 0.3545
+Validation Loss 2.4153 Acc 0.3036
+Time taken for 1 epoch 19.92503595352173 sec
+
+Epoch 78 Loss 2.2749 Acc 0.3589
+Validation Loss 2.3982 Acc 0.3143
+Time taken for 1 epoch 19.94741153717041 sec
+
+Epoch 79 Loss 2.2698 Acc 0.3601
+Validation Loss 2.4215 Acc 0.2991
+Time taken for 1 epoch 19.973984479904175 sec
+
+Epoch 80 Loss 2.2711 Acc 0.3597
+Validation Loss 2.4073 Acc 0.3053
+Time taken for 1 epoch 19.92839741706848 sec
+
+Epoch 81 Loss 2.2704 Acc 0.3597
+Validation Loss 2.4003 Acc 0.3138
+Time taken for 1 epoch 19.97657561302185 sec
+
+Epoch 82 Loss 2.2670 Acc 0.3610
+Validation Loss 2.4002 Acc 0.3143
+Time taken for 1 epoch 19.987637996673584 sec
+
+Epoch 83 Loss 2.2873 Acc 0.3554
+Validation Loss 2.4012 Acc 0.3145
+Time taken for 1 epoch 19.93485116958618 sec
+
+Epoch 84 Loss 2.2678 Acc 0.3610
+Validation Loss 2.3973 Acc 0.3154
+Time taken for 1 epoch 19.857962131500244 sec
+
+Epoch 85 Loss 2.2647 Acc 0.3619
+Validation Loss 2.3997 Acc 0.3147
+Time taken for 1 epoch 19.93203854560852 sec
+
+Epoch 86 Loss 2.2648 Acc 0.3616
+Validation Loss 2.3959 Acc 0.3148
+Time taken for 1 epoch 19.92741084098816 sec
+
+Epoch 87 Loss 2.2673 Acc 0.3610
+Validation Loss 2.3944 Acc 0.3137
+Time taken for 1 epoch 19.884830713272095 sec
+
+Epoch 88 Loss 2.2882 Acc 0.3551
+Validation Loss 2.4019 Acc 0.3128
+Time taken for 1 epoch 20.01542854309082 sec
+
+Epoch 89 Loss 2.2649 Acc 0.3622
+Validation Loss 2.4018 Acc 0.3127
+Time taken for 1 epoch 19.92023229598999 sec
+
+Epoch 90 Loss 2.2664 Acc 0.3615
+Validation Loss 2.3976 Acc 0.3133
+Time taken for 1 epoch 19.940184593200684 sec
+
+Epoch 91 Loss 2.2626 Acc 0.3626
+Validation Loss 2.4000 Acc 0.3146
+Time taken for 1 epoch 19.978858947753906 sec
+
+Epoch 92 Loss 2.2599 Acc 0.3633
+Validation Loss 2.4013 Acc 0.3113
+Time taken for 1 epoch 20.040673971176147 sec
+
+Epoch 93 Loss 2.2611 Acc 0.3629
+Validation Loss 2.3974 Acc 0.3145
+Time taken for 1 epoch 19.859927654266357 sec
+
+Epoch 94 Loss 2.2722 Acc 0.3599
+Validation Loss 2.3997 Acc 0.3123
+Time taken for 1 epoch 19.992781162261963 sec
+
+Epoch 95 Loss 2.2587 Acc 0.3639
+Validation Loss 2.4032 Acc 0.3141
+Time taken for 1 epoch 19.912717819213867 sec
+
+Epoch 96 Loss 2.2575 Acc 0.3641
+Validation Loss 2.3993 Acc 0.3149
+Time taken for 1 epoch 20.001096725463867 sec
+
+Epoch 97 Loss 2.2568 Acc 0.3643
+Validation Loss 2.3993 Acc 0.3148
+Time taken for 1 epoch 19.993950605392456 sec
+
+Epoch 98 Loss 2.2786 Acc 0.3584
+Validation Loss 2.4047 Acc 0.3110
+Time taken for 1 epoch 19.943214893341064 sec
+
+Epoch 99 Loss 2.2590 Acc 0.3639
+Validation Loss 2.4008 Acc 0.3120
+Time taken for 1 epoch 19.889169692993164 sec
+
+Epoch 100 Loss 2.2556 Acc 0.3649
+Validation Loss 2.4014 Acc 0.3113
+Time taken for 1 epoch 19.951721668243408 sec
+
+(1560, 43) pad by 8 to (98, 16, 43)
+4/4 [==============================] - 2s 3ms/step
+(1560, 53)
+(1712, 43) to (107, 16, 43)
+4/4 [==============================] - 0s 2ms/step
+(1712, 53)
+(3731, 43) pad by 13 to (234, 16, 43)
+8/8 [==============================] - 0s 2ms/step
+(3731, 53)
+(3137, 43) pad by 15 to (197, 16, 43)
+7/7 [==============================] - 0s 2ms/step
+(3137, 53)
+(1536, 43) to (96, 16, 43)
+3/3 [==============================] - 0s 2ms/step
+(1536, 53)
+(p3-10) cyc@ahg-WS660T:~/ML_Final$
+(p3-10) cyc@ahg-WS660T:~/ML_Final$
