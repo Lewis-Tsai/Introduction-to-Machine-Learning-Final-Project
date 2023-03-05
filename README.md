@@ -69,7 +69,7 @@ For implementation details, input / output formts, experminents and result, plea
 <!-- LICENSE -->
 ## License
 
-Distributed under the MIT License. See `LICENSE.txt` for more information.
+Distributed under the MIT License. See `license.txt` for more information.
 
 ## Contact
 
