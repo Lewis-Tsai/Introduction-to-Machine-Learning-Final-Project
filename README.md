@@ -15,18 +15,14 @@
   <p align="center">
     project_description
     <br />
-    <a href="https://github.com/Lewis-Tsai/
-2022-Fall-Introduction-to-Machine-Learning-Final-Project"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/Lewis-Tsai/
-2022-Fall-Introduction-to-Machine-Learning-Final-Project">View Demo</a>
+    <a href="https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project">View Demo</a>
     ·
-    <a href="https://github.com/Lewis-Tsai/
-2022-Fall-Introduction-to-Machine-Learning-Final-Project/issues">Report Bug</a>
+    <a href="https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project/issues">Report Bug</a>
     ·
-    <a href="https://github.com/Lewis-Tsai/
-2022-Fall-Introduction-to-Machine-Learning-Final-Project/issues">Request Feature</a>
+    <a href="https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project/issues">Request Feature</a>
   </p>
 </div>
 
@@ -82,19 +78,18 @@ For other contributers, please refer to `Team 40 Final Project Report`.
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/Lewis-Tsai/2022-Fall-Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
-[contributors-url]: https://github.com/Lewis-Tsai/2022-Fall-Introduction-to-Machine-Learning-Final-Project/contributors
-[forks-shield]: https://img.shields.io/github/forks/Lewis-Tsai/2022-Fall-Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
-[forks-url]: https://github.com/Lewis-Tsai/2022-Fall-Introduction-to-Machine-Learning-Final-Project/network/members
-[stars-shield]: https://img.shields.io/github/stars/Lewis-Tsai/2022-Fall-Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
-[stars-url]: https://github.com/Lewis-Tsai/2022-Fall-Introduction-to-Machine-Learning-Final-Project/stargazers
-[issues-shield]: https://img.shields.io/github/issues/Lewis-Tsai/2022-Fall-Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
-[issues-url]: https://github.com/Lewis-Tsai/2022-Fall-Introduction-to-Machine-Learning-Final-Project/issues
-[license-shield]: https://img.shields.io/github/license/Lewis-Tsai/2022-Fall-Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
-[license-url]: https://github.com/Lewis-Tsai/2022-Fall-Introduction-to-Machine-Learning-Final-Project/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
+[contributors-url]: https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project/contributors
+[forks-shield]: https://img.shields.io/github/forks/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
+[forks-url]: https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project/network/members
+[stars-shield]: https://img.shields.io/github/stars/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
+[stars-url]: https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project/stargazers
+[issues-shield]: https://img.shields.io/github/issues/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
+[issues-url]: https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project/issues
+[license-shield]: https://img.shields.io/github/license/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
+[license-url]: https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project/blob/master/license.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/lewis-tsai-7b570421a
-[product-screenshot]: images/screenshot.png
 
 [gmail]: https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white
 [gmail-url]: mailto:A38050787@gmail.com
