@@ -87,7 +87,7 @@ For other contributers, please refer to `Team 40 Final Project Report`.
 [issues-shield]: https://img.shields.io/github/issues/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
 [issues-url]: https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project/issues
 [license-shield]: https://img.shields.io/github/license/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project.svg?style=for-the-badge
-[license-url]: https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project/blob/master/license.txt
+[license-url]: https://github.com/Lewis-Tsai/Introduction-to-Machine-Learning-Final-Project/blob/master/license
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/lewis-tsai-7b570421a
 
